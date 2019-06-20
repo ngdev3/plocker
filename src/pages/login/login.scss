@@ -1,0 +1,154 @@
+page-login {
+
+    .main {
+        background: map-get($colors, heading);
+    }
+    ion-input {
+         ::placeholder {
+            color: gray !important;
+        }
+    }
+    .lgnbtn {
+        background: map-get($colors, footerBtn);
+        border-radius: 5px;
+        height: 4rem;
+        font-size: 1.3em;
+        font-weight: 500;
+        margin: 12% 0;
+    }
+    .lgnText {
+        font-size: 6vw;
+        color: map-get($colors, white);
+        text-align: center;
+        font-weight: bold;
+        font-family: serif;
+        // line-height: 200%;
+    }
+    .infoIcon {
+        text-align: center;
+        font-weight: bold;
+        color: map-get($colors, white);
+        font-size: 7vw;
+        //  line-height: 180%;
+    }
+    .login {
+        background: url(../assets/imgs/login/login-bg.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        padding: 2% 0;
+        margin: 0 2%;
+        box-shadow: none;
+    }
+    .loginTxt {
+        font-size: 5vw;
+        padding: 4% 0;
+        margin-bottom: 40%;
+        font-weight: 500;
+    }
+    .item.item-md .checkbox-md {
+        margin: 0 2px;
+    }
+    .list-md .item-block .item-inner {
+        border: 0;
+    }
+    .checkbox-ios .checkbox-icon {
+        width: 28px;
+        height: 28px;
+    }
+    .checkbox-ios .checkbox-checked .checkbox-inner {
+        left: 8px;
+        top: 4px;
+        width: 8px;
+        height: 13px;
+    }
+    .checkbox-md .checkbox-checked,
+    .checkbox-ios .checkbox-checked {
+        background-color: map-get($colors, footerBtn);
+    }
+    .checkbox-ios .checkbox-icon {
+        border-color: map-get($colors, footerBtn);
+    }
+    .regBtn {
+        color: map-get($colors, heading);
+        margin: 5% 0;
+        border-radius: 5px;
+        text-transform: none;
+        border-color: map-get($colors, heading);
+        border: 2px solid map-get($colors, heading);
+        font-size: 1.2em;
+        height: 4rem;
+        display: none;
+    }
+    .userIcon {
+        background: url(../assets/imgs/login/user.png);
+        background-size: 6%;
+        background-position: right center;
+        background-repeat: no-repeat;
+    }
+    .passIcon {
+        background: url(../assets/imgs/request-permit/password.png);
+        background-size: 6%;
+        background-position: right center;
+        background-repeat: no-repeat;
+    }
+    .border {
+        border-bottom: 1px solid map-get($colors, customGray);
+        font-size: 4.8vw;
+    }
+    .reset {
+        // font-size: .9em;
+        font-size: 4.1vw;
+        text-decoration: underline;
+        text-align: end;
+        padding: 6% 0;
+    }
+    .remember {
+        border-bottom: none!important;
+        padding-left: 0px;
+    }
+    .text-input-md {
+        margin: 0;
+    }
+    .checkbox-md .checkbox-checked .checkbox-inner {
+        border-color: map-get($colors, footerBtn);
+        width: 7px;
+        height: 13px;
+        left: 5px;
+    }
+    .checkbox-md .checkbox-checked {
+        border-color: map-get($colors, footerBtn);
+        background-color: map-get($colors, white);
+    }
+    .checkbox-md .checkbox-icon {
+        width: 20px;
+        height: 20px;
+    }
+    .loginItemBack {
+        background: transparent;
+        padding: 0 5% 0px 5%;
+    }
+    .scroll-content {
+        overflow: scroll!important;
+    }
+    .footerTxt {
+        color: map-get($colors, white);
+        margin: 5%;
+    }
+    .border-style{
+        border-right: 1px solid map-get($colors, white);
+    }
+    .cstmTxt1 {
+        padding: 0 5px;
+        font-size: 4.1vw;
+    }
+    .item-md.item-block .item-inner{
+        padding-top: 3%;
+    }
+    .item-md.item-input.item-input-has-focus .item-inner,
+    .item-md.item-input.input-has-focus .item-inner {
+      border-bottom-color: none;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+    }
+    
+}
