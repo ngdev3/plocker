@@ -32,12 +32,13 @@ page-login {
         //  line-height: 180%;
     }
     .login {
-        background: url(../assets/imgs/login/login-bg.png);
+        // background: url(../assets/imgs/login/login-bg.png);
         background-size: 100% 100%;
         background-repeat: no-repeat;
         padding: 2% 0;
         margin: 0 2%;
         box-shadow: none;
+        border-radius:3%
     }
     .loginTxt {
         font-size: 5vw;
@@ -150,5 +151,5 @@ page-login {
       -webkit-box-shadow: none;
       box-shadow: none;
     }
-    
+
 }

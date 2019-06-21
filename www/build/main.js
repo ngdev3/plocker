@@ -253,13 +253,20 @@ var LoginPage = (function () {
     function LoginPage(navCtrl, navParams) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
+        this.login = {
+            // username: 'sds@test.test',
+            // username: 'hkumar@test.test',
+            // password: 'Password1',
+            username: '',
+            password: ''
+        };
     }
     LoginPage.prototype.ionViewDidLoad = function () {
         console.log('ionViewDidLoad LoginPage');
     };
     LoginPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-login',template:/*ion-inline-start:"/media/tspl26/D/Rajat/lock/PasswordLocker/src/pages/login/login.html"*/`<ion-content>\n\n  <ion-row>\n\n    <ion-col col-2></ion-col>\n    <ion-col col-8 text-center><span>Hello</span></ion-col>\n    <ion-col col-2></ion-col>\n\n  </ion-row>\n\n</ion-content>\n`/*ion-inline-end:"/media/tspl26/D/Rajat/lock/PasswordLocker/src/pages/login/login.html"*/,
+            selector: 'page-login',template:/*ion-inline-start:"/media/tspl26/D/Rajat/lock/PasswordLocker/src/pages/login/login.html"*/`<ion-content class="main">\n\n  <ion-row>\n\n    <ion-col col-2></ion-col>\n    <ion-col col-8 text-center style="padding: 8%"></ion-col>\n    <ion-col col-2 padding></ion-col>\n  </ion-row>\n\n  <ion-card class="login">\n    <ion-row text-center class="loginTxt" style="margin-bottom: 6%">\n      <ion-col>\n          Login\n      </ion-col>\n\n    </ion-row>\n    <ion-row text-center>\n      <ion-col col-4> </ion-col>\n      \n      <ion-col col-4>\n        <img text-center src="assets/icon/logo.png" alt="">\n      </ion-col>\n      <ion-col col-4> </ion-col>\n    </ion-row>\n    <ion-list inset>\n        <ion-item class="border">\n            <ion-input type="text" id="username" placeholder="Username" class=" userIcon" [(ngModel)]="login.username"></ion-input>\n        </ion-item>\n        <ion-item class="border">\n            <ion-input type="password" id="password" placeholder="Password" class=" passIcon" [(ngModel)]="login.password"></ion-input>\n        </ion-item>\n        <ion-row>\n          <ion-col col-7>\n              <ion-item class="item-trns" class="remember">\n                  <ion-label>Remember Me</ion-label>\n                  <ion-checkbox [(ngModel)]="checkbox" (click)="onFilterChange()"></ion-checkbox>\n              </ion-item>\n          </ion-col>\n          <ion-col col-5 class="reset">Reset Password!</ion-col>\n      </ion-row>\n\n      <button ion-button block class="lgnbtn btnGreen" (click)="doLogin()">Login</button>\n\n      <button ion-button block outline class="regBtn">Register New Account</button>\n\n    </ion-list>\n  </ion-card>\n\n</ion-content>\n`/*ion-inline-end:"/media/tspl26/D/Rajat/lock/PasswordLocker/src/pages/login/login.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
     ], LoginPage);

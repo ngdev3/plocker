@@ -1,11 +1,49 @@
-<ion-content>
+<ion-content class="main">
 
   <ion-row>
 
     <ion-col col-2></ion-col>
-    <ion-col col-8 text-center><span>Hello</span></ion-col>
-    <ion-col col-2></ion-col>
-
+    <ion-col col-8 text-center style="padding: 8%"></ion-col>
+    <ion-col col-2 padding></ion-col>
   </ion-row>
+
+  <ion-card class="login">
+    <ion-row text-center class="loginTxt" style="margin-bottom: 6%">
+      <ion-col>
+          Password Locker
+      </ion-col>
+
+    </ion-row>
+    <ion-row text-center>
+      <ion-col col-4> </ion-col>
+      
+      <ion-col col-4>
+        <img text-center src="assets/icon/logo.png" alt="">
+      </ion-col>
+      <ion-col col-4> </ion-col>
+    </ion-row>
+    <ion-list inset>
+        <ion-item class="border">
+            <ion-input type="text" id="username" placeholder="Username" class=" userIcon" [(ngModel)]="login.username"></ion-input>
+        </ion-item>
+        <ion-item class="border">
+            <ion-input type="password" id="password" placeholder="Password" class=" passIcon" [(ngModel)]="login.password"></ion-input>
+        </ion-item>
+        <ion-row>
+          <ion-col col-7>
+              <ion-item class="item-trns" class="remember">
+                  <ion-label>Remember Me</ion-label>
+                  <ion-checkbox [(ngModel)]="checkbox" (click)="onFilterChange()"></ion-checkbox>
+              </ion-item>
+          </ion-col>
+          <ion-col col-5 class="reset">Reset Password!</ion-col>
+      </ion-row>
+
+      <button ion-button block class="lgnbtn btnGreen" (click)="doLogin()">Login</button>
+
+      <button ion-button block outline class="regBtn">Register New Account</button>
+
+    </ion-list>
+  </ion-card>
 
 </ion-content>
