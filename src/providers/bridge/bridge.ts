@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+// import { SQLite, SQLiteObject } from '@ionic-native/sqlite/ngx';
 
 /*
   Generated class for the BridgeProvider provider.
@@ -10,8 +11,16 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class BridgeProvider {
 
-  constructor(public http: HttpClient) {
+  constructor(
+    public http: HttpClient,
+    // private sqlite: SQLite
+    ) {
     console.log('Hello BridgeProvider Provider');
   }
 
+  createTable(){
+    console.log("Create Table")
+  }
+
 }
+  

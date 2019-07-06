@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
+import { SQLite, SQLiteObject } from '@ionic-native/sqlite/ngx';
+import { HttpClientModule,HttpClient } from '@angular/common/http';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
@@ -8,7 +10,7 @@ import { ListPage } from '../pages/list/list';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-import { BridgeProvider } from '../providers/bridge/bridge';
+import { BridgeProvider } from "../providers/bridge/bridge";
 import { AddDetailPage } from '../pages/add-detail/add-detail';
 import { ChangePasswordPage } from '../pages/change-password/change-password';
 import { SharePage } from '../pages/share/share';
@@ -36,6 +38,7 @@ import { LoginPage } from '../pages/login/login';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     IonicModule.forRoot(MyApp),
   ],
   bootstrap: [IonicApp],
@@ -57,7 +60,9 @@ import { LoginPage } from '../pages/login/login';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    BridgeProvider
+    BridgeProvider,
+    HttpClientModule,
+    SQLite
   ]
 })
 export class AppModule {}

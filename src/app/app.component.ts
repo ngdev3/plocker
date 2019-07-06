@@ -41,7 +41,7 @@ export class MyApp {
 
 
     // used for an example of ngFor and navigation
-    this.pages = [
+    this.pages = [ 
       { title: 'Dashboard', component: HomePage,image: "assets/icon/home.png",isdisable:false },
       { title: 'Add Detail', component: AddDetailPage ,image: "assets/icon/add.png",isdisable:false},
       { title: 'Secure List ', component: ListPage ,image: "assets/icon/list.png",isdisable:false},

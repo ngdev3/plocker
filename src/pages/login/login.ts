@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+
+import { BridgeProvider } from "../../providers/bridge/bridge";
 
 /**
  * Generated class for the LoginPage page.
@@ -17,18 +20,27 @@ export class LoginPage {
 
 
   login = {
-    // username: 'sds@test.test',
-    // username: 'hkumar@test.test',
-    // password: 'Password1',
     username: '',
     password: ''
   }
   
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
+  constructor(
+    public navCtrl: NavController, 
+    public bridge: BridgeProvider,
+    private http: HttpClient,
+
+    public navParams: NavParams
+    ) {
+  
+  this.bridge.createTable()
+}
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad LoginPage');
+  }
+
+  doLogin(){
+
   }
 
 }
