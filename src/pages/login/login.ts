@@ -23,6 +23,7 @@ export class LoginPage {
     username: '',
     password: ''
   }
+  remember:any
   
   constructor(
     public navCtrl: NavController, 
