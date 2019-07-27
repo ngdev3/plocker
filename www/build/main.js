@@ -530,13 +530,14 @@ var BridgeProvider = (function () {
         console.log('Hello BridgeProvider Provider');
     }
     BridgeProvider.prototype.createTable = function () {
-        console.log("Create Table");
+        console.log("Create Table Kkj");
     };
     BridgeProvider = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["A" /* Injectable */])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_common_http__["a" /* HttpClient */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_common_http__["a" /* HttpClient */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_common_http__["a" /* HttpClient */]) === "function" && _a || Object])
     ], BridgeProvider);
     return BridgeProvider;
+    var _a;
 }());
 
 //# sourceMappingURL=bridge.js.map

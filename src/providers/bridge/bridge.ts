@@ -19,7 +19,7 @@ export class BridgeProvider {
   }
 
   createTable(){
-    console.log("Create Table")
+    console.log("Create Table Kkj")
   }
 
 }
